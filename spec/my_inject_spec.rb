@@ -24,5 +24,9 @@ RSpec.describe Enumerable do
       # calculates the sum of the elements of the enumerable array plus the initial value
       expect(enumerable.my_inject(initial_value) { |sum, value| sum + value }).to eq 188
     end
+
+    it "dasdfas" do
+      expect(enumerable.my_inject { |sum, num| sum + num }).to eq 88
+    end
   end
 end
